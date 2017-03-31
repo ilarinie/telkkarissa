@@ -1,0 +1,20 @@
+@import 'colors.scss';
+.main {
+  background: $primary-color-dark;
+  height: 100vh;
+}
+@media screen and (min-width: 1000px ){
+  .content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .content {
+    width: 99%;
+  }
+}
+.content {
+  height: 100%;
+  background: $primary-color;
+  margin: 0 auto;
+}
