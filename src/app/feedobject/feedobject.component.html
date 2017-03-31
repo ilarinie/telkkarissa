@@ -1,6 +1,9 @@
 <div class="main">
   <h2>{{feedObject.channel}} - {{feedObject.feed.title}}</h2>
-  <div *ngFor="let item of feedObject.items">
-    {{item.title}}
-  </div>
+  <table>
+    <tr *ngFor="let item of feedObject.items" class="{{ item.favorite === true ? 'favorite' : ''}}">
+      <td class="time">{{item.pubDate | date:'shortTime'}}</td>
+      <td class="title"><span (click)="openItem(item)">{{item.title}}</span></td>
+    </tr>
+  </table>
 </div>

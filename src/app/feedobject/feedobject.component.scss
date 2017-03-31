@@ -4,3 +4,22 @@
     padding: 20px;
     background: #ffe;
 }
+.favorite {
+    background: red;
+    color: white;
+}
+table {
+    table-layout: fixed;
+    width: 400px;
+}
+td {
+    border-bottom: 1px solid grey;
+}
+.time {
+    width: 100px;
+}
+.title {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -7,7 +7,9 @@ export class FeedsHolder {
         for (const feedobj of this.feeds) {
             feedobj.feed.title = feedobj.feed.title.substring(9, feedobj.feed.title.length);
             feedobj.channel = this.channelNumber(feedobj.feed.title);
-
+            for (const item of feedobj.items) {
+                item.title = item.title.substr(5, item.title.length)
+            }
         }
     }
 

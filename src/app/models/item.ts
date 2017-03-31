@@ -7,4 +7,5 @@ export class Item {
   description: string;
   thumbnail: string;
   content: string;
+  favorite = false;
 }
